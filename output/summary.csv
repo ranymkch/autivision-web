@@ -1,0 +1,4 @@
+source_file,patient_code,age,sex,ai_prediction,ai_confidence,score_image,tier_ai,aq10_raw_score,aq10_normalised,aq10_threshold_met,tier_questionnaire,combined_score,niveau_risque,mock,inference_ms
+boy_patient_01.jpg,AV-QAH-2768,12,M,autistic,0.6295,0.6295,MODERE,6,0.6,True,MODERE,0.6177,MODERE,True,191
+girl_patient_02.png,AV-PUS-5935,12,F,autistic,0.6423,0.6423,MODERE,7,0.7,True,ELEVE,0.6654,ELEVE,True,196
+patient_03.jpg,AV-HYR-2370,8,M,autistic,0.6412,0.6412,MODERE,7,0.7,True,ELEVE,0.6647,ELEVE,True,241

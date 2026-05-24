@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 212 45% 96%;
+    --foreground: 222 47% 11%;
+
+    --card: 210 40% 99%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 99%;
+
+    --secondary: 212 38% 92%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 212 38% 92%;
+    --muted-foreground: 215 16% 42%;
+
+    --accent: 199 89% 48%;
+    --accent-foreground: 210 40% 99%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 99%;
+
+    --border: 214 30% 86%;
+    --input: 214 30% 86%;
+    --ring: 221 83% 53%;
+
+    --risk-low: 142 71% 45%;
+    --risk-mid: 38 92% 50%;
+    --risk-high: 0 72% 51%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 96%;
+
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 222 47% 9%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 199 89% 56%;
+    --accent-foreground: 222 47% 6%;
+
+    --destructive: 0 63% 45%;
+    --destructive-foreground: 210 40% 96%;
+
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 217 91% 60%;
+
+    --risk-low: 142 60% 50%;
+    --risk-mid: 38 92% 56%;
+    --risk-high: 0 72% 58%;
+  }
+
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  ::selection { @apply bg-primary/20; }
+}
+
+@layer utilities {
+  .container-av {
+    @apply mx-auto w-full max-w-[1280px] px-6 md:px-10 lg:px-16;
+  }
+  .section-pad { @apply py-20 md:py-28 lg:py-32; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .text-balance { text-wrap: balance; }
+}
+
+@media print {
+  aside,
+  nav,
+  header,
+  [data-topbar],
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  #report-print-area {
+    width: 100%;
+  }
+}

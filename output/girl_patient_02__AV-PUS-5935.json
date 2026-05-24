@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source_file": "girl_patient_02.png",
+    "processed_at": "2026-05-09T14:14:44.984273+00:00",
+    "patient_index": 2,
+    "inference_ms": 196,
+    "mock": true
+  },
+  "patient": {
+    "code_anonymise": "AV-PUS-5935",
+    "age": 12,
+    "sexe": "F"
+  },
+  "ai_screening": {
+    "prediction": "autistic",
+    "confidence": 0.6423,
+    "confidence_pct": "64.2%",
+    "threshold_used": 0.5,
+    "model": "MobileNetV2-mock",
+    "score_image": 0.6423,
+    "tier_ai": "MODERE"
+  },
+  "questionnaire": {
+    "type": "AQ-10",
+    "answers": {
+      "q1": "SD",
+      "q2": "DA",
+      "q3": "DD",
+      "q4": "DD",
+      "q5": "DD",
+      "q6": "DD",
+      "q7": "SD",
+      "q8": "DA",
+      "q9": "SD",
+      "q10": "SA"
+    },
+    "raw_score": 7,
+    "score_normalised": 0.7,
+    "threshold_met": true,
+    "tier_questionnaire": "ELEVE"
+  },
+  "combined": {
+    "score_global": 0.6654,
+    "niveau_risque": "ELEVE",
+    "result_mode": "combined",
+    "weights": {
+      "face": 0.6,
+      "questionnaire": 0.4
+    }
+  }
+}

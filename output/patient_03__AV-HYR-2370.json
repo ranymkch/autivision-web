@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source_file": "patient_03.jpg",
+    "processed_at": "2026-05-09T14:14:44.985643+00:00",
+    "patient_index": 3,
+    "inference_ms": 241,
+    "mock": true
+  },
+  "patient": {
+    "code_anonymise": "AV-HYR-2370",
+    "age": 8,
+    "sexe": "M"
+  },
+  "ai_screening": {
+    "prediction": "autistic",
+    "confidence": 0.6412,
+    "confidence_pct": "64.1%",
+    "threshold_used": 0.5,
+    "model": "MobileNetV2-mock",
+    "score_image": 0.6412,
+    "tier_ai": "MODERE"
+  },
+  "questionnaire": {
+    "type": "AQ-10",
+    "answers": {
+      "q1": "SA",
+      "q2": "DD",
+      "q3": "SD",
+      "q4": "DD",
+      "q5": "SA",
+      "q6": "SA",
+      "q7": "DA",
+      "q8": "DA",
+      "q9": "DA",
+      "q10": "DA"
+    },
+    "raw_score": 7,
+    "score_normalised": 0.7,
+    "threshold_met": true,
+    "tier_questionnaire": "ELEVE"
+  },
+  "combined": {
+    "score_global": 0.6647,
+    "niveau_risque": "ELEVE",
+    "result_mode": "combined",
+    "weights": {
+      "face": 0.6,
+      "questionnaire": 0.4
+    }
+  }
+}

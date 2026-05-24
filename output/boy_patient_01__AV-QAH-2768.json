@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source_file": "boy_patient_01.jpg",
+    "processed_at": "2026-05-09T14:14:44.979456+00:00",
+    "patient_index": 1,
+    "inference_ms": 191,
+    "mock": true
+  },
+  "patient": {
+    "code_anonymise": "AV-QAH-2768",
+    "age": 12,
+    "sexe": "M"
+  },
+  "ai_screening": {
+    "prediction": "autistic",
+    "confidence": 0.6295,
+    "confidence_pct": "62.9%",
+    "threshold_used": 0.5,
+    "model": "MobileNetV2-mock",
+    "score_image": 0.6295,
+    "tier_ai": "MODERE"
+  },
+  "questionnaire": {
+    "type": "AQ-10",
+    "answers": {
+      "q1": "DA",
+      "q2": "DD",
+      "q3": "DD",
+      "q4": "DA",
+      "q5": "DA",
+      "q6": "SA",
+      "q7": "DA",
+      "q8": "DD",
+      "q9": "DD",
+      "q10": "SA"
+    },
+    "raw_score": 6,
+    "score_normalised": 0.6,
+    "threshold_met": true,
+    "tier_questionnaire": "MODERE"
+  },
+  "combined": {
+    "score_global": 0.6177,
+    "niveau_risque": "MODERE",
+    "result_mode": "combined",
+    "weights": {
+      "face": 0.6,
+      "questionnaire": 0.4
+    }
+  }
+}
