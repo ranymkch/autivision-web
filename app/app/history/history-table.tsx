@@ -93,7 +93,7 @@ export function HistoryTable({ rows, showDoctor = false }: { rows: HistoryRow[];
                 const score: number | null = details.score ?? null;
                 const resultMode: string | null =
                   details.result_mode ?? h.evaluations?.result_mode ?? null;
-                const risk = h.evaluations?.niveau_risque ?? null;
+                const risk = (h.evaluations?.niveau_risque ?? null) as import("@/types/database").RisqueEnum | null;
                 const patientCode = h.patients?.code_anonymise ?? "—";
                 const label = ACTION_LABELS[h.action] ?? h.action;
                 const pf = h.profiles;
